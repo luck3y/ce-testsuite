@@ -1,4 +1,4 @@
-package org.jboss.test.arquillian.ce.eap71;
+package org.jboss.test.arquillian.ce.eap7cd;
 
 import org.jboss.arquillian.ce.api.OpenShiftResource;
 import org.jboss.arquillian.ce.api.Template;
@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
  * @author Marko Luksa
  */
 @RunWith(Arquillian.class)
-@Template(url = "https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/eap/eap71-mongodb-s2i.json", parameters = {
+@Template(url = "https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/eap/eap7cd-mysql-s2i.json", parameters = {
         @TemplateParameter(name = "HTTPS_NAME", value = "jboss"),
         @TemplateParameter(name = "HTTPS_PASSWORD", value = "mykeystorepass")})
 @OpenShiftResource("https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/secrets/eap7-app-secret.json")
-public class Eap71MongoDbTest extends EapDbTestBase {
+public class Eap7CDMysqlTest extends EapDbTestBase {
 }
