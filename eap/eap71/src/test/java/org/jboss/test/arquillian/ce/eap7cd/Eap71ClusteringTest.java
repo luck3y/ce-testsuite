@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
  * @author Jonh Wendell
  */
 @RunWith(Arquillian.class)
-@Template(url = "https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/eap/eap7cd-basic-s2i.json", parameters = {
+@Template(url = "https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/eap/eap71-basic-s2i.json", parameters = {
         @TemplateParameter(name = "SOURCE_REPOSITORY_URL", value = "https://github.com/jboss-openshift/openshift-examples"),
         @TemplateParameter(name = "SOURCE_REPOSITORY_REF", value = "master"),
         @TemplateParameter(name = "CONTEXT_DIR", value = "eap-tests/cluster1") })

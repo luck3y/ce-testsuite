@@ -137,8 +137,13 @@
                         <kubernetes.master>${kubernetes.master}</kubernetes.master>
                         <kubernetes.auth.token>${kubernetes.auth.token}</kubernetes.auth.token>
                         <arq.extension.openshift.routerHost>${router.hostIP}</arq.extension.openshift.routerHost>
+                        <!--
                         <template.repository>jboss-openshift</template.repository>
                         <template.branch>master</template.branch>
+                        -->
+                        https://raw.githubusercontent.com/luck3y/jboss-eap-7-openshift-image/eap-live/templates/eap-cd/eap-cd-basic-s2i.json
+                        <template.repository>luck3y/jboss-eap-7-openshift-image</template.repository> -->
+                        <template.branch>eap-live</template.branch>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

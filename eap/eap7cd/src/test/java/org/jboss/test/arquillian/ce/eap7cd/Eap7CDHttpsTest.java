@@ -34,12 +34,12 @@ import org.junit.runner.RunWith;
  * @author Marko Luksa
  */
 @RunWith(Arquillian.class)
-@Template(url = "https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/eap/eap7cd-https-s2i.json",
+@Template(url = "https://raw.githubusercontent.com/${template.repository:jboss-openshift}/${template.branch:master}/templates/eap-cd-https-s2i.json",
         parameters = {
                 @TemplateParameter(name = "HTTPS_NAME", value = "jboss"),
                 @TemplateParameter(name = "HTTPS_PASSWORD", value = "mykeystorepass")
         })
-@OpenShiftResource("https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/secrets/eap7-app-secret.json")
+@OpenShiftResource("https://raw.githubusercontent.com/${template.repository:jboss-openshift}/application-templates/${template.branch:master}/secrets/eap-cd-app-secret.json")
 public class Eap7CDHttpsTest extends EapHttpsTestBase {
 
 }

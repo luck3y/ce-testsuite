@@ -20,7 +20,7 @@
 					]
 				}
 			},
-			"image": "jboss-eap-7/eap-online:12.0",
+			"image": "172.30.1.1:5000/openshift/eap-cd-openshift:12",
             "ports": [
                 {
                     "containerPort": 8080,
